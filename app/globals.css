@@ -10,11 +10,15 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-momo-trust-display);
   --font-mono: var(--font-momo-trust-display);
+  --color-j-beige: #D7D9CE;
+  --color-j-red: #AB3428;
+  --color-j-teel-dark: #18534F;
+  --color-j-teel-light: #226D68;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #D7D9CE;
     --foreground: #ededed;
   }
 }

@@ -1,13 +1,13 @@
 import { Momo_Trust_Display } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 const momotrustdisplay = Momo_Trust_Display({
-  weight:"400",
+  weight: "400",
   variable: "--font-momo-trust-display",
   subsets: ["latin"],
 });
-
 
 export default function RootLayout({
   children,
@@ -18,7 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${momotrustdisplay.variable} antialiased`}>
         <Navbar></Navbar>
-        {children}
+        <div className="min-h-screen">{children}</div>
+        <Footer></Footer>
       </body>
     </html>
   );
